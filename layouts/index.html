@@ -1,7 +1,10 @@
 {{ define "main" }}
-    {{ range .Pages }}
-    <div>
-	<a href="{{ .URL }}">{{ .Title }}</a> <br>
+    <div class="pages-container"> 
+	{{ range .Pages }}
+	   <div class="page">
+    	       <img src="#" alt="">
+    	       <a href="{{ .URL }}">{{ .Title }}</a> <br>
+    	   <sdf/div>
+    	{{ end }}
     </div>
-    {{ end }}
 {{ end }}
