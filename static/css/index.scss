@@ -1,1 +1,45 @@
-.pages-container {}
+$link-color: lighten(purple, 10);
+
+.pages-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    & .page {
+	padding: 2rem;
+	margin: 0 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 25rem;
+	& .page-text {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: flex-start;
+	    max-width: 100%;
+	& a {
+	    text-decoration: none;
+	    font-size: 1.8rem;
+	    width: min-content;
+	    white-space: nowrap;
+	    color: $link-color;
+	    font-weight: 600;
+	    &:hover {
+		color: lighten($link-color, 15);
+	    }
+	}
+	& p {
+	    min-width: 20rem;
+	    margin: 0;
+	    font-size: 1.2rem;
+	}
+	}
+	& img {
+	    max-width: 6rem;
+	    margin: 1rem;
+	}
+    }
+}

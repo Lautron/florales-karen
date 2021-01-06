@@ -6,6 +6,8 @@
     <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/header.css">
+    {{ block "style" . }}
+    {{ end }}
 </head>
 <body>
     {{ partial "navbar.html" .}}
