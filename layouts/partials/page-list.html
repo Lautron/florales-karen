@@ -1,0 +1,17 @@
+<div class="pages-container"> 
+    {{ range .Pages }}
+       <div class="page">
+	   <img src="{{ "flower.svg" | relURL}}" alt="">
+	   <div class="page-text">
+	       <a href="{{ .URL }}">{{ .Title }}</a>
+	       <p>
+		Lorem ipsum dolor sit amet,
+		consectetur adipiscing elit. Ultrices
+		tellus lorem congue pulvinar pharetra,
+		sapien quam. Tristique molestie
+		lorem non sit turpis hac volutpat.
+	       </p>
+	    </div>
+       </div>
+    {{ end }}
+</div>
