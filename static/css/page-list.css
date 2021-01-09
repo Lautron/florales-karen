@@ -1,0 +1,36 @@
+.pages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap; }
+  .pages-container .page {
+    padding: 2rem;
+    margin: 0 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 15rem; }
+    .pages-container .page .page-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 100%; }
+      .pages-container .page .page-text a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        width: min-content;
+        white-space: nowrap;
+        color: #b300b3;
+        font-weight: 600; }
+        .pages-container .page .page-text a:hover {
+          color: #ff01ff; }
+      .pages-container .page .page-text p {
+        min-width: 20rem;
+        margin: 0;
+        font-size: 1rem; }
+    .pages-container .page img {
+      max-width: 8rem;
+      margin: 1rem; }
