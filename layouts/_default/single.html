@@ -1,0 +1,13 @@
+{{ define "style" }}
+<link rel="stylesheet" href="{{ "css/single.css" | relURL }}">
+{{ end }}
+{{ define "main" }}
+<section class="main-container">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+        <article id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+{{ end }}

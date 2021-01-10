@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .main-container div {
+    margin: 0 10rem; }
+  .main-container h1 {
+    font-size: 2rem; }
+  .main-container article h1 {
+    font-size: 1.7rem; }
